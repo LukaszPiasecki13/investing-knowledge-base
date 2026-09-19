@@ -52,7 +52,7 @@ TV = \frac{FCFF_n \cdot (1 + g)}{WACC - g}
 $$
 
 $$
-equity\ value = EV - net\ debt - minority\ interests
+equity\ value = EV - net\ debt - minority\ interests - preferred\ equity
 $$
 
 $$

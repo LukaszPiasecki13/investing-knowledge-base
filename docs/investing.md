@@ -13,6 +13,7 @@ _Ostatnia aktualizacja: 2026-09-19. Progi liczbowe pochodzące z przepisów opat
 | [`wycena-wewnetrzna.md`](wycena-wewnetrzna.md) | DCF, model Gordona, wycena porównawcza, wzór Grahama, margines bezpieczeństwa |
 | [`specyfika-sektorowa.md`](specyfika-sektorowa.md) | Banki, deweloperzy, spółki cykliczne, REIT-y — gdzie standardowe wskaźniki zawodzą |
 | [`podatki-i-konta.md`](podatki-i-konta.md) | Belka, OKI, IKE/IKZE, W-8BEN i dywidendy z USA (stan na 2026) |
+| [`zarzadzanie-ryzykiem.md`](zarzadzanie-ryzykiem.md) | Wielkość pozycji (Kelly), dywersyfikacja, ryzyko walutowe PLN/USD |
 | [`zrodla-i-slownik.md`](zrodla-i-slownik.md) | Skąd brać dane + słownik skrótów PL/EN |
 
 ---
@@ -1055,7 +1056,7 @@ Tani i dobry biznes może być tani i dobry przez pięć lat. Teza Value bez kat
 | **Katalizator** | Konkretne zdarzenie, które ma odblokować wycenę: wyjście ze stratnego segmentu, koniec cyklu inwestycyjnego (CAPEX wraca do amortyzacji), spłata długu poniżej progu kowenantu, rozpoczęcie skupu akcji, zmiana w akcjonariacie, powrót dywidendy. „Rynek w końcu zauważy" nie jest katalizatorem. |
 | **Horyzont** | W jakim czasie katalizator ma zadziałać i co zrobisz, jeśli nie zadziała. |
 | **Warunki unieważnienia** | 2-4 **obserwowalne** zdarzenia, po których teza jest martwa niezależnie od kursu: marża brutto spada poniżej X przez dwa kwartały, Net Debt/EBITDA przekracza kowenant, odejście kluczowego klienta, emisja rozwadniająca, rezygnacja audytora, zmiana polityki dywidendowej. |
-| **Czego nie wiem** | Lista otwartych pytań i założeń, których nie udało się zweryfikować. To ona decyduje o wielkości pozycji. |
+| **Czego nie wiem** | Lista otwartych pytań i założeń, których nie udało się zweryfikować. To ona decyduje o wielkości pozycji — zasady jej ustalania (Kelly, reguły praktyczne, limity sektorowe) są w [`zarzadzanie-ryzykiem.md`](zarzadzanie-ryzykiem.md). |
 | **Argumenty strony przeciwnej** | Najlepszy powód, żeby **nie** kupować, sformułowany uczciwie. Jeśli nie potrafisz go napisać, nie rozumiesz jeszcze tej spółki. |
 
 Całość zapisz **przed** zakupem — po fakcie pamięć dopasowuje uzasadnienie do wyniku. To jest treść dokumentu w `journal/`, a przy zamknięciu pozycji podstawa post-mortemu.

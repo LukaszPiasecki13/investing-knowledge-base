@@ -11,6 +11,7 @@ Polskojęzyczna baza wiedzy i poradnik inwestycyjny (analiza fundamentalna spó�
   - `wycena-wewnetrzna.md` — DCF, model Gordona, wycena porównawcza, wzór Grahama, margines bezpieczeństwa.
   - `specyfika-sektorowa.md` — banki, deweloperzy, spółki cykliczne, tech, nieruchomości.
   - `podatki-i-konta.md` — Belka, OKI, IKE/IKZE/OIPE, W-8BEN (liczby z rokiem i źródłem).
+  - `zarzadzanie-ryzykiem.md` — wielkość pozycji (Kelly), dywersyfikacja, ryzyko walutowe PLN/USD.
   - `zrodla-i-slownik.md` — źródła danych i słownik skrótów PL/EN.
 - `analyses/<TICKER>/` — analizy konkretnych spółek (tworzone przez `/analyze`).
 - `journal/` — tezy inwestycyjne i post-mortemy (tworzone przez `/thesis` i `/post-mortem`).
