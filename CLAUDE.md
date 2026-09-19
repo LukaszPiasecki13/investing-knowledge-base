@@ -5,6 +5,13 @@ Polskojęzyczna baza wiedzy i poradnik inwestycyjny (analiza fundamentalna spó�
 ## Struktura
 
 - `docs/investing.md` — główny przewodnik (Części I–IV: podstawy, sprawozdania, wskaźniki, analiza Value/Growth). Obrazki w `docs/image*.png`.
+- Dokumenty uzupełniające w `docs/`, linkowane z nagłówka `investing.md`:
+  - `mssf-vs-uor.md` — różnice MSSF vs ustawa o rachunkowości.
+  - `jakosc-zysku.md` — jakość zysku, red flagi księgowe, rozwodnienie i SBC.
+  - `wycena-wewnetrzna.md` — DCF, model Gordona, wycena porównawcza, wzór Grahama, margines bezpieczeństwa.
+  - `specyfika-sektorowa.md` — banki, deweloperzy, spółki cykliczne, tech, nieruchomości.
+  - `podatki-i-konta.md` — Belka, OKI, IKE/IKZE/OIPE, W-8BEN (liczby z rokiem i źródłem).
+  - `zrodla-i-slownik.md` — źródła danych i słownik skrótów PL/EN.
 - `analyses/<TICKER>/` — analizy konkretnych spółek (tworzone przez `/analyze`).
 - `journal/` — tezy inwestycyjne i post-mortemy (tworzone przez `/thesis` i `/post-mortem`).
 - `scripts/` — skrypty pomocnicze (walidacja Markdown, wykresy).
