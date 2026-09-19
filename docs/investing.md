@@ -138,7 +138,7 @@ Trzy rzeczy, o których warto pamiętać:
 
 - **Nie ma raportów za II i IV kwartał** — ich rolę pełnią raport półroczny i roczny. Dane za IV kwartał trzeba wyliczyć samodzielnie jako różnicę rok minus trzy kwartały (albo poczekać na raport roczny).
 - Spółka publikuje **własny kalendarz** raportem bieżącym w styczniu i zwykle raportuje wcześniej niż termin graniczny (GPW SA za 2026: I kwartał 27 maja, III kwartał 16 listopada). Zmiana terminu wymaga osobnego raportu bieżącego — nagłe przesunięcie publikacji „w tył" bywa sygnałem ostrzegawczym.
-- **NewConnect (ASO) ma własne, luźniejsze terminy** z Regulaminu ASO, a zakres raportu kwartalnego jest tam znacznie uboższy. Nie zakładaj, że mała spółka z NC raportuje tak samo jak spółka z rynku głównego.
+- **NewConnect (ASO) ma inne terminy z Załącznika nr 3 do Regulaminu ASO — nie prościej „luźniejsze".** Raport roczny ma **5 miesięcy** od końca roku obrotowego (dłużej niż 4 miesiące na rynku głównym), ale raport kwartalny — **45 dni** (krócej niż 60 dni na rynku głównym). Spółka, która złoży raport roczny w ciągu 80 dni od końca roku, jest zwolniona z raportu za IV kwartał. Zakres treści raportu kwartalnego NC jest jednak dużo uboższy niż na rynku regulowanym (nie wymaga pełnego sprawozdania wg MSSF) — różnica leży w szczegółowości, nie w terminie.
 
 </details>
 
@@ -646,10 +646,12 @@ $$
 | Data | Co oznacza |
 | --- | --- |
 | Uchwała walnego zgromadzenia | Ustala kwotę oraz dwie poniższe daty. Do tego momentu wszystko jest rekomendacją zarządu, nie zobowiązaniem. |
-| **Dzień dywidendy** (dzień ustalenia prawa) | Trzeba mieć akcje **zapisane na rachunku** na koniec tego dnia. Ze względu na rozliczenie transakcji w cyklu D+2 akcje trzeba kupić odpowiednio wcześniej — sprawdź aktualny cykl rozliczeniowy KDPW. |
+| **Dzień dywidendy** (dzień ustalenia prawa) | Trzeba mieć akcje **zapisane na rachunku** na koniec tego dnia. Przy standardowym rozliczeniu transakcji w cyklu **T+2** akcje trzeba kupić co najmniej 2 dni sesyjne wcześniej — sprawdź aktualny cykl rozliczeniowy KDPW. |
 | Dzień wypłaty | Kiedy pieniądze trafiają na rachunek; bywa kilka miesięcy po dniu dywidendy. |
 
 W pierwszej sesji po dniu ustalenia prawa kurs odniesienia jest **obniżany o kwotę dywidendy**. Nie ma darmowego obiadu: kupno „pod dywidendę" tuż przed odcięciem daje gotówkę i o tyle samo niższy kurs — a do tego podatek. Szczegóły opodatkowania: [`podatki-i-konta.md`](podatki-i-konta.md).
+
+⚠️ **Cykl rozliczeniowy ma się zmienić.** ESMA planuje przejście europejskich rynków (w tym GPW/KDPW) z T+2 na **T+1 od 11 października 2027 r.** Po tej dacie liczba dni wyprzedzenia przy kupnie „pod dywidendę" się skróci — przed tą datą zweryfikuj, czy zmiana już weszła w życie.
 
 Spółka może też wypłacać **zaliczkę na poczet dywidendy** w trakcie roku — wtedy roczne DPR liczy się z sumy wypłat.
 
@@ -779,7 +781,7 @@ Dziewięć binarnych testów (każdy spełniony = 1 punkt), zaprojektowanych wł
 | Efektywność operacyjna | 8. Marża brutto wyższa niż rok temu |
 | | 9. Rotacja aktywów wyższa niż rok temu |
 
-Interpretacja: **8-9 punktów** — spółka mocna, **0-2** — do odrzucenia. Test nr 4 jest tu najcenniejszy pojedynczo: to najprostszy dostępny filtr jakości zysku.
+Interpretacja jako pasmo, nie jako precyzyjny wynik: **0-2** — bardzo słaba, prawie wszystkie testy nie przechodzą; **3-5** — sygnały sprzeczne, obraz mieszany; **6-7** — solidna, większość wskaźników się poprawia; **8-9** — mocna finansowo, rentowność i efektywność razem idą w dobrą stronę. Test nr 4 jest tu najcenniejszy pojedynczo: to najprostszy dostępny filtr jakości zysku.
 
 </details>
 
@@ -1287,6 +1289,8 @@ Progi i liczby pochodzące z przepisów lub z konkretnych publikacji — z datą
 | Miejsce w tekście | Źródło | Zweryfikowano |
 | --- | --- | --- |
 | Terminy raportów okresowych (2.1) | Rozporządzenie Ministra Finansów z 6.06.2025 r. w sprawie informacji bieżących i okresowych (Dz.U. 2025 poz. 755); [SEG — raporty okresowe](https://seg.org.pl/regulacje/kategorie/pl-raporty-okresowe) | 2026-09 |
+| Terminy raportów NewConnect — 45 dni (kwartalny), 5 miesięcy (roczny) (2.1) | Załącznik nr 3 do Regulaminu ASO, § 6 | 2026-09 |
+| Przejście na cykl rozliczeniowy T+1 od 11.10.2027 (3.5.2) | [ESMA — propozycja przejścia na T+1](https://www.esma.europa.eu/node/214007) | 2026-09 |
 | Amortyzacja wartości firmy wg UoR (2.3.1) | Ustawa o rachunkowości, art. 44b ust. 10 | 2026-09 |
 | Obowiązek MSSF dla emitentów (2.5) | Ustawa o rachunkowości, art. 55 ust. 5 oraz art. 45 ust. 1a-1c; rozporządzenie (WE) nr 1606/2002, art. 4 | 2026-09 |
 | Kapitał zapasowy — 8% zysku, 1/3 kapitału zakładowego (3.5.1) | Kodeks spółek handlowych, art. 396 § 1 | 2026-09 |

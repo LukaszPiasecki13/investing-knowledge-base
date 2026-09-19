@@ -161,13 +161,13 @@ $$
 V = EPS \cdot (8{,}5 + 2g)
 $$
 
-gdzie $EPS$ to znormalizowany zysk na akcję, a $g$ — oczekiwane tempo wzrostu w procentach na najbliższe 7-10 lat. Wersja zrewidowana koryguje wynik o poziom stóp procentowych:
+gdzie $EPS$ to znormalizowany zysk na akcję, $8,5$ to mnożnik przyjęty dla spółki bez wzrostu, a $g$ — oczekiwane tempo wzrostu w procentach na najbliższe 7-10 lat. Wersja zrewidowana (1974) koryguje wynik o poziom stóp procentowych:
 
 $$
 V = \frac{EPS \cdot (8{,}5 + 2g) \cdot 4{,}4}{Y}
 $$
 
-gdzie 4,4 to rentowność amerykańskich obligacji korporacyjnych AAA w momencie tworzenia wzoru, a $Y$ — rentowność bieżąca.
+gdzie 4,4 to średnia rentowność amerykańskich obligacji korporacyjnych klasy AAA w 1962 r. (rok skonstruowania oryginalnego wzoru), a $Y$ — **bieżąca** rentowność 20-letnich obligacji korporacyjnych AAA. Dzielenie przez $Y$ przelicza statyczny mnożnik z 1962 r. na dzisiejsze otoczenie stóp procentowych.
 
 **Ograniczenia, których nie da się obejść:** wzór jest liniowy wobec $g$, więc przy wysokim zakładanym wzroście daje absurdalne wyniki; „8,5" to mnożnik spółki niewzrostowej z rynku amerykańskiego lat 60., nieprzenoszalny wprost na GPW; a sam Graham traktował go jako ilustrację, nie jako metodę wyceny, i przestrzegał przed formułami dającymi złudzenie precyzji.
 
@@ -210,7 +210,8 @@ Wymagany margines nie jest stały — skaluje się z niepewnością:
 
 | Twierdzenie | Źródło | Zweryfikowano |
 | --- | --- | --- |
-| Wzór Grahama w wersji podstawowej i zrewidowanej (4,4 / Y) | B. Graham, *The Intelligent Investor*, rozdz. 11 | 2026-09 |
+| Wzór Grahama, wersja podstawowa (1962) | B. Graham, *The Intelligent Investor*, rozdz. 11 | 2026-09 |
+| Wzór Grahama, wersja zrewidowana (4,4 / Y) | Rewizja ogłoszona na seminarium ICFA/FARF, wrzesień 1974, włączona do wyd. *The Intelligent Investor* z 1974 r. | 2026-09 |
 | Kryteria inwestora defensywnego i margines bezpieczeństwa | B. Graham, *The Intelligent Investor*, rozdz. 14 i 20 | 2026-09 |
 | Model Gordona, CAPM, konstrukcja DCF/WACC | Standardowy aparat finansów przedsiębiorstw — treść podręcznikowa, bez pojedynczego źródła | 2026-09 |
 | Premia za ryzyko rynkowe dla Polski | Coroczne zestawienia A. Damodarana (NYU Stern) — **wartość zmienna, sprawdź rok** | do sprawdzenia przy każdym użyciu |

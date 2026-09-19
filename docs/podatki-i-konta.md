@@ -65,7 +65,7 @@ Przychody i koszty w walucie obcej przelicza się po **kursie średnim NBP z ost
 
 Limity ustalane są jako wielokrotność prognozowanego przeciętnego wynagrodzenia miesięcznego (IKE i OIPE: 3×; IKZE: 1,2× / 1,8× dla działalności) i ogłaszane obwieszczeniem Ministra Rodziny, Pracy i Polityki Społecznej. Dla porównania limit IKE w 2025 r. wynosił 26 019 zł.
 
-**Uwaga:** limit OIPE jest odrębny od limitu IKE, ale oba produkty prowadzi się osobno — sprawdź w regulaminie konkretnej instytucji, jak traktuje równoległe posiadanie IKE i OIPE.
+**Uwaga:** IKE i OIPE mają ten sam limit ustawowy (3× prognozowane przeciętne wynagrodzenie), ale to dwa odrębne produkty — sprawdź w regulaminie konkretnej instytucji, czy i jak traktuje równoległe posiadanie obu.
 
 ### 2.1. IKE czy IKZE
 
@@ -89,7 +89,7 @@ Wypłata przed spełnieniem warunków to **zwrot** — z IKE opodatkowany 19% od
 
 </summary>
 
-Ustawa uchwalona przez Sejm **3 lipca 2026 r.**, podpisana przez Prezydenta **13 sierpnia 2026 r.**; konta mają być dostępne **od 1 stycznia 2027 r.**
+Ustawa z dnia 3 lipca 2026 r. o osobistych kontach inwestycyjnych — uchwalona przez Sejm **3 lipca 2026 r.**, podpisana przez Prezydenta **13 sierpnia 2026 r.**, ogłoszona **18 sierpnia 2026 r.** (Dz.U. 2026 poz. 1098); konta mają być dostępne **od 1 stycznia 2027 r.**
 
 Mechanizm w skrócie:
 
@@ -97,9 +97,10 @@ Mechanizm w skrócie:
 | --- | --- |
 | Zwolnienie z podatku Belki | Aktywa **inwestycyjne** (akcje, obligacje, jednostki funduszy) do **100 000 zł** |
 | Podlimit | Aktywa **oszczędnościowe** (depozyty, obligacje skarbowe, fundusze bezpieczne) do **25 000 zł** — mieszczą się w limicie 100 000 zł |
-| Powyżej limitu | Podatek od **wartości aktywów** (nie od zysku), liczony jako 19% wartości stopy referencyjnej NBP obowiązującej 31 października roku poprzedzającego rok podatkowy |
-| Stawka w 2027 | ok. **0,85%** wartości aktywów ponad limit |
+| Powyżej limitu | Podatek od **wartości aktywów** (nie od zysku): stawka = **19% × stopa referencyjna NBP** obowiązująca 31 października roku poprzedzającego rok podatkowy |
 | Poza OKI | Podatek Belki **19% pozostaje** bez zmian |
+
+**Stawka na 2027 r. nie jest jeszcze znana** — zależy od stopy referencyjnej NBP z 31 października 2026 r., a ta może się zmienić na posiedzeniach RPP we wrześniu i październiku 2026. Szacunek „ok. 0,85%" pojawiający się w doniesieniach z sierpnia 2026 r. był liczony przy stopie referencyjnej ok. 4,4-4,5%; na dzień tej aktualizacji (wrzesień 2026) stopa referencyjna NBP wynosi **3,75%**, co przy niezmienionym poziomie dałoby stawkę ok. 19% × 3,75% ≈ **0,71%**. **Przelicz sam:** 19% × (stopa referencyjna NBP z 31.10.2026) — to jedyny sposób, by mieć aktualną liczbę.
 
 Dwie rzeczy, które trzeba przemyśleć zawczasu:
 
@@ -123,7 +124,7 @@ Dwie rzeczy, które trzeba przemyśleć zawczasu:
 
 Bez złożonego formularza W-8BEN amerykański płatnik pobiera **30%** podatku u źródła od dywidendy. Formularz potwierdza, że jesteś polskim rezydentem podatkowym, i obniża stawkę do **15%** wynikających z umowy między Polską a USA o unikaniu podwójnego opodatkowania.
 
-Formularz składa się u brokera (w polskich domach maklerskich zwykle elektronicznie), obowiązuje ok. 3 lata i wymaga odnowienia. **Złóż go, zanim kupisz pierwszą amerykańską spółkę dywidendową** — nadpłaconego podatku u źródła praktycznie nie da się odzyskać.
+Formularz składa się u brokera (w polskich domach maklerskich zwykle elektronicznie) i jest ważny **do końca trzeciego roku kalendarzowego** następującego po roku podpisania (formularz podpisany np. w marcu 2026 r. jest ważny do 31 grudnia 2029 r.) — w praktyce od ok. 1 do prawie 4 lat, w zależności od miesiąca podpisania. **Złóż go, zanim kupisz pierwszą amerykańską spółkę dywidendową** — nadpłaconego podatku u źródła praktycznie nie da się odzyskać.
 
 ### 4.2. Rozliczenie w Polsce
 
@@ -154,7 +155,7 @@ Przy standardowych 15% WHT dopłata w Polsce wynosi więc **4 punkty procentowe*
 
 </summary>
 
-- [ ] Czy W-8BEN jest aktualny (odnawiany co ~3 lata)?
+- [ ] Czy W-8BEN jest aktualny (ważny do 31 grudnia trzeciego roku kalendarzowego po podpisaniu)?
 - [ ] Czy wykorzystałem limity IKE / IKZE / OIPE w tym roku? (Niewykorzystany limit przepada — nie przechodzi na kolejny rok.)
 - [ ] Czy mam raporty roczne od wszystkich brokerów, w tym zagranicznych?
 - [ ] Czy mam nierozliczone straty z poprzednich lat i czy nie zbliża się 5-letni termin?
@@ -173,8 +174,10 @@ Przy standardowych 15% WHT dopłata w Polsce wynosi więc **4 punkty procentowe*
 | Limit IKE 2026: 28 260 zł; 2025: 26 019 zł | [MRPiPS — IKE, limit wpłat](https://www.gov.pl/web/rodzina/ike-limit-wplat) (obwieszczenie z 17.11.2025, M.P. 2025 poz. 1202) | 2026-09 |
 | Limity IKZE 2026: 11 304 zł / 16 956 zł | [MRPiPS — IKZE, limit wpłat](https://www.gov.pl/web/rodzina/ikze-limit-wplat) (obwieszczenie z 10.11.2025, M.P. 2025 poz. 1156) | 2026-09 |
 | Limit OIPE 2026: 28 260 zł | [KNF — limit wpłat na OIPE w 2026 r.](https://www.knf.gov.pl/?articleId=87231&p_id=18) | 2026-09 |
-| OKI: uchwalenie 3.07.2026, podpis 13.08.2026, wejście 1.01.2027, limity 100/25 tys. zł, stawka ok. 0,85% w 2027 | [SII — prezydent podpisał ustawę o OKI](https://www.sii.org.pl/19259/analizy/newsroom/prezydent-podpisal-ustawe-o-oki-inwestowanie-bez-podatku-belki-od-2027-r.html); [Bankier](https://www.bankier.pl/wiadomosc/Prezydent-podpisal-ustawe-o-osobistych-kontach-inwestycyjnych-9181877.html) | 2026-09 |
+| OKI: uchwalenie 3.07.2026, podpis 13.08.2026, ogłoszenie 18.08.2026 (Dz.U. 2026 poz. 1098), wejście 1.01.2027, limity 100/25 tys. zł, mechanizm stawki = 19% × stopa referencyjna NBP z 31.10 roku poprzedniego | Dz.U. 2026 poz. 1098; [SII — prezydent podpisał ustawę o OKI](https://www.sii.org.pl/19259/analizy/newsroom/prezydent-podpisal-ustawe-o-oki-inwestowanie-bez-podatku-belki-od-2027-r.html); [Bankier](https://www.bankier.pl/wiadomosc/Prezydent-podpisal-ustawe-o-osobistych-kontach-inwestycyjnych-9181877.html) | 2026-09 |
+| Stopa referencyjna NBP: 3,75% (od marca 2026, bez zmian na posiedzeniu 8-9.09.2026) | [Bankier — RPP wrzesień 2026](https://www.bankier.pl/wiadomosc/Stopy-w-NBP-bez-zmian-we-wrzesiu-2026-Rada-nie-zmienia-stop-ale-czy-zmienila-kurs-9194318.html) | 2026-09 |
 | Odliczenie podatku zagranicznego do wysokości 19% | Ustawa o PIT, art. 30a ust. 9 | 2026-09 |
 | Stawka 15% na dywidendy portfelowe z USA | Umowa między Polską a USA o uniknięciu podwójnego opodatkowania — [tekst (IRS)](https://www.irs.gov/pub/irs-trty/poland.pdf) | 2026-09 |
 | Rozliczanie strat: 5 lat, 50% rocznie albo jednorazowo do 5 mln zł | Ustawa o PIT, art. 9 ust. 3 | 2026-09 |
 | Przeliczanie walut po kursie średnim NBP z dnia poprzedzającego | Ustawa o PIT, art. 11a | 2026-09 |
+| Ważność W-8BEN do końca trzeciego roku kalendarzowego po podpisaniu | [IRS — Instructions for Form W-8BEN](https://www.irs.gov/instructions/iw8ben) | 2026-09 |

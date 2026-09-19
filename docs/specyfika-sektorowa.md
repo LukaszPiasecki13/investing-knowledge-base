@@ -147,10 +147,10 @@ Narzędzia, które to korygują:
 W spółkach nieruchomościowych raportujących wg MSSF znaczna część zysku netto pochodzi z **przeszacowania nieruchomości do wartości godziwej** (MSR 40) — a to zysk niegotówkowy. Dlatego branża używa własnych miar:
 
 $$
-FFO = net\ income + depreciation\ and\ amortization - gains\ on\ property\ sales
+FFO = net\ income + real\ estate\ D\&A + impairment\ write\text{-}downs - net\ gains\ on\ sale\ of\ depreciable\ property
 $$
 
-**FFO** (Funds From Operations) eliminuje amortyzację i zyski ze sprzedaży nieruchomości, pokazując powtarzalny wynik z najmu. **AFFO** dodatkowo odejmuje nakłady odtworzeniowe. Wskaźnik ceny liczy się jako **P/FFO**, a nie C/Z.
+**FFO** (Funds From Operations, definicja NAREIT) eliminuje z zysku netto amortyzację związaną z nieruchomościami, odpisy z tytułu utraty wartości oraz zyski/straty ze sprzedaży nieruchomości podlegających amortyzacji — dokłada z powrotem to, co jest niegotówkowe albo jednorazowe, i pokazuje powtarzalny wynik z najmu. **AFFO** dodatkowo odejmuje nakłady odtworzeniowe (capex utrzymaniowy) i inne korekty specyficzne dla spółki. Wskaźnik ceny liczy się jako **P/FFO**, a nie C/Z.
 
 Drugą podstawową miarą jest **NAV** (Net Asset Value) — wartość nieruchomości minus dług; spółki notowane są zwykle z dyskontem lub premią do NAV, i to dyskonto jest właściwym przedmiotem analizy.
 
@@ -189,6 +189,6 @@ Czego sprawdzić: wskaźnik pustostanów, średni pozostały okres najmu (WAULT)
 | Rozpoznanie przychodu dewelopera przy przekazaniu lokalu | MSSF 15 | 2026-09 |
 | Wycena nieruchomości inwestycyjnych w wartości godziwej | MSR 40 | 2026-09 |
 | Odpisy metodą oczekiwanych strat kredytowych | MSSF 9 | 2026-09 |
-| Definicja FFO (wynik netto + amortyzacja − zyski ze sprzedaży nieruchomości) | Standard branżowy NAREIT | 2026-09 |
+| Definicja FFO (wynik netto + amortyzacja nieruchomości + odpisy z utraty wartości − zyski/straty ze sprzedaży nieruchomości podlegających amortyzacji) | [Nareit — Funds From Operations (FFO)](https://www.reit.com/glossary/funds-operation-ffo) | 2026-09 |
 | Brak obowiązującej ustawy o REIT-ach/SINN w Polsce | [Analiza statusu prac legislacyjnych](https://bank.pl/reit-y-w-polsce-utracona-szansa-czy-swiadoma-ochrona-rynku/) — projekt nieskierowany do Sejmu | 2026-09 |
 | Wymogi kapitałowe i kryteria dywidendowe banków | Stanowiska KNF — **publikowane corocznie, sprawdzaj każdorazowo** | do sprawdzenia przy każdym użyciu |
