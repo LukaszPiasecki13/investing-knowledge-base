@@ -8,13 +8,10 @@ _Ostatnia aktualizacja: 2026-09-19. Progi liczbowe pochodzące z przepisów opat
 
 | Dokument | Zakres |
 | --- | --- |
-| [`mssf-vs-uor.md`](mssf-vs-uor.md) | Różnice MSSF vs ustawa o rachunkowości — dlaczego raport z GPW wygląda inaczej niż podręcznikowy bilans |
 | [`jakosc-zysku.md`](jakosc-zysku.md) | Jakość zysku, red flagi księgowe, rozwodnienie i wynagrodzenie w akcjach (SBC) |
 | [`wycena-wewnetrzna.md`](wycena-wewnetrzna.md) | DCF, model Gordona, wycena porównawcza, wzór Grahama, margines bezpieczeństwa |
 | [`specyfika-sektorowa.md`](specyfika-sektorowa.md) | Banki, deweloperzy, spółki cykliczne, REIT-y — gdzie standardowe wskaźniki zawodzą |
 | [`podatki-i-konta.md`](podatki-i-konta.md) | Belka, OKI, IKE/IKZE, W-8BEN i dywidendy z USA (stan na 2026) |
-| [`zarzadzanie-ryzykiem.md`](zarzadzanie-ryzykiem.md) | Wielkość pozycji (Kelly), dywersyfikacja, ryzyko walutowe PLN/USD |
-| [`zrodla-i-slownik.md`](zrodla-i-slownik.md) | Skąd brać dane + słownik skrótów PL/EN |
 
 ---
 
@@ -298,7 +295,7 @@ Sekcje 2.2 i 2.3 opisują układ z **ustawy o rachunkowości (UoR)**. Tymczasem 
 - **Skonsolidowane** sprawozdania emitentów dopuszczonych do obrotu na rynku regulowanym oraz banków sporządza się obowiązkowo wg MSR/MSSF — art. 55 ust. 5 UoR, w wykonaniu art. 4 rozporządzenia (WE) nr 1606/2002.
 - **Jednostkowe** sprawozdanie emitenta może być wg MSSF albo wg UoR — decyduje organ zatwierdzający (art. 45 ust. 1a-1c UoR). Stąd w jednym raporcie potrafią współistnieć dwa różne układy.
 
-Praktyczna konsekwencja: nazwy pozycji, układ RZiS i część zasad wyceny będą inne, niż sugerują tabele powyżej. Najważniejsze różnice — nomenklatura, brak kategorii „pozostała działalność operacyjna", leasing wg MSSF 16, nieruchomości inwestycyjne w wartości godziwej, goodwill, ujemna wartość firmy — zebrane są w [`mssf-vs-uor.md`](mssf-vs-uor.md).
+Praktyczna konsekwencja: nazwy pozycji, układ RZiS i część zasad wyceny będą inne, niż sugerują tabele powyżej. Najważniejsze różnice: nomenklatura (np. bilans → sprawozdanie z sytuacji finansowej), brak kategorii „pozostała działalność operacyjna", leasing wg MSSF 16 (od 2019 w bilansie i amortyzacji, nie w kosztach operacyjnych), nieruchomości inwestycyjne w wartości godziwej (MSR 40), goodwill nieamortyzowany i testowany na utratę wartości (MSR 36), ujemna wartość firmy od razu w wyniku (MSSF 3).
 
 </details>
 
@@ -1056,7 +1053,7 @@ Tani i dobry biznes może być tani i dobry przez pięć lat. Teza Value bez kat
 | **Katalizator** | Konkretne zdarzenie, które ma odblokować wycenę: wyjście ze stratnego segmentu, koniec cyklu inwestycyjnego (CAPEX wraca do amortyzacji), spłata długu poniżej progu kowenantu, rozpoczęcie skupu akcji, zmiana w akcjonariacie, powrót dywidendy. „Rynek w końcu zauważy" nie jest katalizatorem. |
 | **Horyzont** | W jakim czasie katalizator ma zadziałać i co zrobisz, jeśli nie zadziała. |
 | **Warunki unieważnienia** | 2-4 **obserwowalne** zdarzenia, po których teza jest martwa niezależnie od kursu: marża brutto spada poniżej X przez dwa kwartały, Net Debt/EBITDA przekracza kowenant, odejście kluczowego klienta, emisja rozwadniająca, rezygnacja audytora, zmiana polityki dywidendowej. |
-| **Czego nie wiem** | Lista otwartych pytań i założeń, których nie udało się zweryfikować. To ona decyduje o wielkości pozycji — zasady jej ustalania (Kelly, reguły praktyczne, limity sektorowe) są w [`zarzadzanie-ryzykiem.md`](zarzadzanie-ryzykiem.md). |
+| **Czego nie wiem** | Lista otwartych pytań i założeń, których nie udało się zweryfikować. To ona decyduje o wielkości pozycji. |
 | **Argumenty strony przeciwnej** | Najlepszy powód, żeby **nie** kupować, sformułowany uczciwie. Jeśli nie potrafisz go napisać, nie rozumiesz jeszcze tej spółki. |
 
 Całość zapisz **przed** zakupem — po fakcie pamięć dopasowuje uzasadnienie do wyniku. To jest treść dokumentu w `journal/`, a przy zamknięciu pozycji podstawa post-mortemu.
