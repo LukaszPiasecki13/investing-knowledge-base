@@ -4,14 +4,14 @@ _Wersja robocza - usystematyzowane notatki_
 
 _Ostatnia aktualizacja: 2026-09-19. Progi liczbowe pochodzące z przepisów opatrzone są rokiem i podstawą prawną — przed użyciem sprawdź, czy nadal obowiązują (sekcja [Źródła](#źródła))._
 
-**Dokumenty powiązane:**
+**Dokumenty powiązane** (samodzielne bazy wiedzy, nie wymagają znajomości tego przewodnika):
 
 | Dokument | Zakres |
 | --- | --- |
 | [`jakosc-zysku.md`](jakosc-zysku.md) | Jakość zysku, red flagi księgowe, rozwodnienie i wynagrodzenie w akcjach (SBC) |
-| [`wycena-wewnetrzna.md`](wycena-wewnetrzna.md) | DCF, model Gordona, wycena porównawcza, wzór Grahama, margines bezpieczeństwa |
-| [`specyfika-sektorowa.md`](specyfika-sektorowa.md) | Banki, deweloperzy, spółki cykliczne, REIT-y — gdzie standardowe wskaźniki zawodzą |
-| [`podatki-i-konta.md`](podatki-i-konta.md) | Belka, OKI, IKE/IKZE, W-8BEN i dywidendy z USA (stan na 2026) |
+| [`wycena-wewnetrzna.md`](wycena-wewnetrzna.md) | DCF (z przykładem liczbowym), model Gordona i model H, EVA, wycena porównawcza i transakcje porównywalne, SOTP, wartość likwidacyjna, wzór Grahama, margines bezpieczeństwa |
+| [`specyfika-sektorowa.md`](specyfika-sektorowa.md) | Banki, ubezpieczyciele, deweloperzy, cykliczne/surowcowe, tech, telekomunikacja, utilities regulowane, retail, farmacja/biotech, REIT-y — gdzie standardowe wskaźniki zawodzą |
+| [`podatki-i-konta.md`](podatki-i-konta.md) | Belka, konta emerytalne, OKI, W-8BEN, fundusze/ETF-y i amerykański estate tax, spadki i darowizny, rezydencja podatkowa (stan na 2026) |
 
 ---
 

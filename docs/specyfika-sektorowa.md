@@ -1,6 +1,6 @@
 # Specyfika sektorowa — gdzie standardowe wskaźniki zawodzą
 
-_Uzupełnienie do [`investing.md`](investing.md), Część III i IV. Ostatnia aktualizacja: 2026-09-19._
+_Samodzielna baza wiedzy o analizie branżowej — uszczegóławia Część III i IV [`investing.md`](investing.md), ale nie wymaga jego znajomości do zrozumienia. Ostatnia aktualizacja: 2026-09-27._
 
 Screener z Etapu 1 (CR > 2, P/BV < 1,5, D/A < 35%) jest skalibrowany na spółkę przemysłową lub handlową. Zastosowany bez zmian do banku, dewelopera albo spółki cyklicznej daje wyniki gorsze niż brak analizy — bo wygląda na obiektywny. Ten dokument opisuje, co podstawić w miejsce standardowych wskaźników.
 
@@ -140,7 +140,155 @@ Narzędzia, które to korygują:
 <details open>
 <summary>
 
-## 5. Nieruchomości komercyjne i REIT-y
+## 5. Telekomunikacja
+
+</summary>
+
+### 5.1. Dlaczego to osobna branża analityczna
+
+Telekomy łączą dwie cechy rzadko występujące razem: bardzo dużą kapitałochłonność (sieć trzeba budować i modernizować bez końca) z relatywnie stabilnym, powtarzalnym przychodem abonamentowym. Standardowe C/Z i CR mówią mało — kluczowe są metryki operacyjne na klienta.
+
+### 5.2. Wskaźniki właściwe dla branży
+
+| Wskaźnik | Definicja | O czym mówi |
+| --- | --- | --- |
+| **ARPU** (Average Revenue Per User) | przychód cykliczny / średnia liczba abonentów | Siła cenowa; spadające ARPU zwykle oznacza wojnę cenową na nasyconym rynku |
+| **Churn** (wskaźnik odejść) | liczba klientów utraconych w okresie / średnia liczba klientów | Jakość usługi i lojalność; niski churn pozwala amortyzować wysoki koszt pozyskania klienta (CAC) w dłuższym czasie |
+| **CAPEX / przychody** | nakłady inwestycyjne / przychody | Intensywność kapitałowa; jednorazowe zakupy częstotliwości (spektrum) trzeba wyłączyć, licząc „capex utrzymaniowy" do porównań FCF |
+| **EV/EBITDA na ARPU** | mnożnik EV/EBITDA skorygowany o poziom ARPU i dywersyfikację usług | Operator zintegrowany (głos + dane + TV + IoT) zasługuje na wyższy mnożnik niż pojedyncza usługa głosowa/szerokopasmowa — orientacyjnie niżej dla samej łączności podstawowej, wyżej dla operatora z pakietami konwergentnymi |
+
+### 5.3. Na co uważać
+
+- **Spektrum (częstotliwości)** — jednorazowe, ogromne wydatki na aukcjach częstotliwości psują porównywalność CAPEX i FCF między latami; wyłączaj je z „capex utrzymaniowego" przy liczeniu powtarzalnego FCF.
+- **Dług netto** bywa strukturalnie wysoki (sieć to aktywo długoterminowe, finansowane długiem) — porównuj Net Debt/EBITDA z resztą branży, nie z ogólną normą przemysłową.
+- **Konwergencja usług** (bundling głosu, danych, telewizji) redukuje churn, ale wymaga własnej infrastruktury (kabel/światłowód) — operator czysto mobilny bez sieci stacjonarnej jest bardziej narażony na wojnę cenową.
+- **Regulacja** (opłaty za roaming, obowiązki dostępowe, ceny za zakańczanie połączeń) — sprawdź otoczenie regulacyjne kraju notowania, bo bezpośrednio kształtuje ARPU.
+
+</details>
+
+---
+
+<details open>
+<summary>
+
+## 6. Spółki użyteczności publicznej i energetyka regulowana
+
+</summary>
+
+### 6.1. Dlaczego standardowa wycena zawodzi
+
+Dystrybutor energii, wody czy gazu w modelu regulowanym nie konkuruje o klienta ceną — **regulator ustala, jaki zwrot na majątku wolno mu zarobić**. To zmienia całą logikę analizy: pytanie nie brzmi „czy spółka jest konkurencyjna", tylko „jaki zwrot przyznał regulator i jak stabilna jest ta przyznana stopa".
+
+### 6.2. Mechanizm regulacji (building-block approach)
+
+| Element | Co to jest |
+| --- | --- |
+| **RAB** (Regulatory Asset Base) | Skumulowane, uznane przez regulatora nakłady inwestycyjne netto po amortyzacji regulacyjnej — baza, od której liczy się dozwolony zwrot |
+| **WACC regulacyjny** (allowed return) | Stopa zwrotu z RAB przyznana przez regulatora na dany okres regulacyjny (zwykle kilkuletni) |
+| **Przychód dozwolony** | RAB × WACC regulacyjny (zwrot z kapitału) + amortyzacja RAB (zwrot kapitału) + uznane koszty operacyjne + podatek |
+
+### 6.3. Wskaźniki właściwe dla branży
+
+| Wskaźnik | O czym mówi |
+| --- | --- |
+| **EV/RAB** | Analogia do P/BV dla spółek regulowanych; mnożnik w okolicach 1,0-1,5× jest typowy — znacząco wyższy sygnalizuje, że rynek oczekuje zwrotu ponad regulacyjny (np. dzięki działalności nieregulowanej) |
+| **Spread: rzeczywisty ROE vs WACC regulacyjny** | Czy spółka wykonuje lepiej czy gorzej niż zakładał regulator (efektywność kosztowa, dyscyplina inwestycyjna) |
+| **Udział przychodów nieregulowanych** | Segmenty poza regulacją (np. sprzedaż detaliczna energii, usługi dodatkowe) mają inny profil ryzyka i inny właściwy mnożnik — traktuj jak SOTP ([`wycena-wewnetrzna.md`](wycena-wewnetrzna.md#6-suma-części-i-wartość-likwidacyjna)) |
+
+### 6.4. Na co uważać
+
+- **Ryzyko regulacyjne jest ryzykiem politycznym** — zmiana metody wyznaczania WACC regulacyjnego albo tempa wzrostu RAB między okresami regulacyjnymi to główne ryzyko tezy, nie konkurencja rynkowa.
+- **Inflacja i WACC regulacyjny nie mogą być liczone podwójnie** — RAB indeksowana inflacją wymaga WACC realnego; RAB w wartości nominalnej wymaga WACC nominalnego. Sprawdź, którą metodę stosuje regulator.
+- **CAPEX jest w tym modelu paliwem wzrostu, nie kosztem** — większy uznany RAB to większa baza przyszłych przychodów, więc spółka regulowana ma odwrotną motywację do inwestowania niż spółka rynkowa (bodziec do maksymalizacji uznanych nakładów, nie do ich minimalizacji).
+
+</details>
+
+---
+
+<details open>
+<summary>
+
+## 7. Handel detaliczny i dobra konsumpcyjne
+
+</summary>
+
+### 7.1. Wskaźniki właściwe dla branży
+
+| Wskaźnik | Definicja | O czym mówi |
+| --- | --- | --- |
+| **Sprzedaż porównywalna** (LFL / same-store sales) | dynamika przychodów tych samych, działających od ponad roku placówek | Wzrost organiczny bez efektu nowych otwarć — najważniejsza pojedyncza metryka branży; typowy zdrowy zakres to **2-5% rocznie**, powyżej sygnalizuje albo bardzo dobrą koniunkturę, albo niską bazę |
+| **Rotacja zapasów** (inventory turnover) | COGS / średnie zapasy (w skali roku) | Efektywność kapitału obrotowego; typowy zakres w handlu detalicznym to **4-8×** rocznie — poniżej oznacza zaleganie towaru (ryzyko przecen), znacząco powyżej może sygnalizować braki towarowe |
+| **GMROI** (Gross Margin Return on Investment) | marża brutto % × rotacja zapasów | Łączy rentowność z efektywnością kapitału obrotowego w jedną miarę — użyteczne do porównań między formatami sklepów |
+| **Sprzedaż na m² powierzchni** | przychód / powierzchnia handlowa | Produktywność sieci; spadająca przy stałej liczbie sklepów to sygnał kanibalizacji lub utraty ruchu |
+
+### 7.2. Marża brutto zależy od segmentu — nie porównuj między nimi
+
+Poziomy referencyjne różnią się drastycznie w zależności od formatu: dyskont/handel towarami podstawowymi **20-25%**, spożywczy/FMCG **25-30%**, handel ogólny **30-40%**, specjalistyczny **40-55%**, dobra luksusowe **55-70%**. Porównanie marży dyskontu z marżą sieci specjalistycznej jako sygnału „lepszego/gorszego zarządzania" jest bezwartościowe — to inne modele biznesowe z definicji.
+
+### 7.3. Na co uważać
+
+- **E-commerce vs sklepy stacjonarne** — inna struktura kosztów (logistyka i zwroty vs czynsze i personel); udział kanału online w przychodach i jego rentowność brzegowa (marginal profitability) to coraz częściej kluczowa metryka wyprzedzająca.
+- **Sezonowość** — handel detaliczny (zwłaszcza modowy i z zabawkami/elektroniką) ma silnie skoncentrowany IV kwartał; porównania r/r muszą uwzględniać kalendarz świąt.
+- **Leasing powierzchni handlowej** — po MSSF 16 zobowiązania z czynszów wchodzą do bilansu (zob. sekcja 2.5 przewodnika); sieci z dużą liczbą wynajmowanych lokali mają wyższy dług raportowany niż przed 2019 r., bez zmiany realnego ryzyka.
+- **Private label (marki własne)** — wyższa marża brutto niż marki producenckie, ale wymaga własnych nakładów na rozwój produktu i kontrolę jakości.
+
+</details>
+
+---
+
+<details open>
+<summary>
+
+## 8. Farmacja i biotechnologia
+
+</summary>
+
+### 8.1. Dlaczego to najbardziej wyspecjalizowana branża do analizy
+
+Wartość spółki biotechnologicznej pre-commercial w całości siedzi w **przyszłości niepewnej z natury** — w lekach, które jeszcze nie przeszły badań klinicznych. Standardowe wskaźniki (C/Z, ROE) nie mają zastosowania, bo spółka zwykle nie ma jeszcze przychodu.
+
+### 8.2. Fazy badań klinicznych i prawdopodobieństwo sukcesu
+
+| Faza | Cel | Orientacyjne prawdopodobieństwo przejścia do kolejnej fazy |
+| --- | --- | --- |
+| Faza I | Bezpieczeństwo, na małej grupie zdrowych/chorych ochotników | — |
+| Faza II | Wstępna skuteczność i dawkowanie | **~30-35%** przechodzi do Fazy III — to największa bariera w całym procesie |
+| Faza III | Skuteczność i bezpieczeństwo na dużej populacji | — |
+| Rejestracja (np. FDA) | Formalna zgoda na dopuszczenie do obrotu | — |
+
+Całościowe prawdopodobieństwo dojścia od Fazy I do rejestracji wynosi orientacyjnie **10-14%**, ale różni się drastycznie między obszarami terapeutycznymi: onkologia ma jedne z najniższych wskaźników sukcesu (**~3-7%**), choroby rzadkie i hematologia — jedne z najwyższych (**~25%**). Programy z biomarkerem selekcjonującym pacjentów mają istotnie wyższą szansę sukcesu niż programy bez selekcji.
+
+### 8.3. Metoda wyceny: rNPV (risk-adjusted NPV)
+
+Standardowy DCF (sekcja 2 [`wycena-wewnetrzna.md`](wycena-wewnetrzna.md)) trzeba zmodyfikować, ważąc przepływy z każdego programu prawdopodobieństwem sukcesu na każdym etapie:
+
+$$
+rNPV = \sum_{i} PoS_i \times \frac{CF_i}{(1+r)^{t_i}}
+$$
+
+gdzie $PoS_i$ to skumulowane prawdopodobieństwo dotrwania do momentu przepływu $CF_i$ (produkt prawdopodobieństw przejścia przez wszystkie wcześniejsze fazy).
+
+**To założenie decyduje o całej wycenie** — błąd w oszacowaniu prawdopodobieństwa sukcesu o 10 punktów procentowych może zmienić wartość pojedynczego programu o 50-100%. Sprawdzaj, czy analityk/spółka używa prawdopodobieństw specyficznych dla obszaru terapeutycznego, czy uniwersalnego uśrednienia.
+
+### 8.4. Patent cliff — ryzyko dla spółek już komercyjnych
+
+Dla dojrzałych spółek farmaceutycznych kluczowe ryzyko jest odwrotne: utrata wyłączności patentowej na istniejące leki i wejście generyków/biopodobnych, które potrafią zabrać większość przychodu z danego produktu w ciągu 1-2 lat od wygaśnięcia patentu. Sprawdź **harmonogram wygasania patentów** na główne produkty spółki wobec harmonogramu jej pipeline'u — spółka z bliskim patent cliff i słabym pipeline'em ma strukturalny problem niezależnie od bieżących wyników.
+
+### 8.5. Wskaźniki dla spółek komercyjnych
+
+| Wskaźnik | Typowy zakres | Uwaga |
+| --- | --- | --- |
+| **EV/EBITDA** | **10-16×** dla spółek na etapie komercyjnym | Spółki z bliskim patent cliff notowane z dyskontem do średniej sektorowej |
+| **R&D / przychody** | Silnie zależne od modelu (generyczny vs innowacyjny) | Spadający udział R&D przy rosnących przychodach bywa sygnałem „żniw" portfela bez odbudowy pipeline'u |
+
+</details>
+
+---
+
+<details open>
+<summary>
+
+## 9. Nieruchomości komercyjne i REIT-y
 
 </summary>
 
@@ -165,7 +313,7 @@ Czego sprawdzić: wskaźnik pustostanów, średni pozostały okres najmu (WAULT)
 <details open>
 <summary>
 
-## 6. Ściągawka: czym zastąpić standardowe kryteria
+## 10. Ściągawka: czym zastąpić standardowe kryteria
 
 </summary>
 
@@ -176,6 +324,10 @@ Czego sprawdzić: wskaźnik pustostanów, średni pozostały okres najmu (WAULT)
 | Deweloperzy | C/Z uśrednione 3-5 lat | Struktura zapasów, rachunki powiernicze | Dług netto / kapitał własny | Przedsprzedaż |
 | Cykliczne, surowce | C/Z na zysku znormalizowanym, CAPE | CR standardowy | Ostrzejszy próg niż standard | Ceny surowca, krzywa kosztowa |
 | Tech / software | EV/Sales, EV/FCF | Deferred revenue | Net cash | Retencja, deferred revenue |
+| Telekomunikacja | EV/EBITDA wobec ARPU | Nie stosuje się bezpośrednio | ND/EBITDA branżowy, wyższy niż przemysł | ARPU, churn |
+| Utilities regulowane | EV/RAB | Nie stosuje się (biznes regulowany) | Dźwignia akceptowana wyżej — stabilny przepływ | Decyzje regulatora, spread ROE-WACC regulacyjny |
+| Retail / FMCG | C/Z z korektą na format sklepu | Rotacja zapasów, GMROI | Zobowiązania handlowe wobec DPO | LFL (sprzedaż porównywalna) |
+| Farmacja / biotech | rNPV zamiast C/Z (pre-commercial); EV/EBITDA (komercyjne) | Nie stosuje się do pre-profit | Runway gotówki | Wyniki faz badań klinicznych, patent cliff |
 | Nieruchomości | P/FFO, dyskonto do NAV | Harmonogram zapadalności długu | LTV (dług / wartość portfela) | Pustostany, WAULT |
 
 </details>
@@ -192,3 +344,9 @@ Czego sprawdzić: wskaźnik pustostanów, średni pozostały okres najmu (WAULT)
 | Definicja FFO (wynik netto + amortyzacja nieruchomości + odpisy z utraty wartości − zyski/straty ze sprzedaży nieruchomości podlegających amortyzacji) | [Nareit — Funds From Operations (FFO)](https://www.reit.com/glossary/funds-operation-ffo) | 2026-09 |
 | Brak obowiązującej ustawy o REIT-ach/SINN w Polsce | [Analiza statusu prac legislacyjnych](https://bank.pl/reit-y-w-polsce-utracona-szansa-czy-swiadoma-ochrona-rynku/) — projekt nieskierowany do Sejmu | 2026-09 |
 | Wymogi kapitałowe i kryteria dywidendowe banków | Stanowiska KNF — **publikowane corocznie, sprawdzaj każdorazowo** | do sprawdzenia przy każdym użyciu |
+| Definicje ARPU, churn, capex/sales i mnożniki EV/EBITDA wobec ARPU dla telekomów | [Visible Alpha — Integrated Telecom KPIs](https://visiblealpha.com/telecommunications/integrated-telecom-companies/telecom-kpis/); [ibinterviewquestions.com — Telecom Valuation](https://ibinterviewquestions.com/guides/tmt-investment-banking/telecom-valuation-ev-ebitda-ev-subscriber) | 2026-09 |
+| Mechanizm regulacji RAB/WACC regulacyjny (building-block approach), mnożniki EV/RAB ok. 1,0-1,5× | [RSM — Regulated Asset Value and Regulatory Asset Base](https://www.rsm.global/australia/insights/regulated-asset-value-ravregulatory-asset-base-rab-key-principles); [ibinterviewquestions.com — Infrastructure and Utilities Valuation](https://ibinterviewquestions.com/guides/valuation-investment-banking/infrastructure-utilities-valuation-rab-allowed-returns) | 2026-09 |
+| Benchmarki marży brutto i rotacji zapasów w handlu detalicznym; wzrost LFL 2-5%/rok jako typowy zdrowy zakres | Zbiorcze zestawienia branżowe (Shopify, FocusCFO, aislestock.com) — **reguły kciuka, bez jednego pierwotnego źródła** | 2026-09 |
+| Prawdopodobieństwo sukcesu badań klinicznych wg fazy i obszaru terapeutycznego (10-14% ogółem, ~30-35% Faza II→III, onkologia 3-7%, choroby rzadkie ~25%) | [ibinterviewquestions.com — Probability of Success by Phase](https://ibinterviewquestions.com/guides/healthcare-investment-banking/probability-of-success-by-phase) | 2026-09 |
+| Metoda wyceny rNPV (risk-adjusted NPV) dla programów badawczych | [BiopharmaVantage — Pharma & Biotech Valuation Guide](https://www.biopharmavantage.com/pharma-biotech-valuation-best-practices) | 2026-09 |
+| EV/EBITDA sektora farmaceutycznego 10-16× dla spółek komercyjnych | [DrugPatentWatch — Valuation of Pharmaceutical Companies](https://www.drugpatentwatch.com/blog/valuation-of-pharma-companies-5-key-considerations-2/) | 2026-09 |
