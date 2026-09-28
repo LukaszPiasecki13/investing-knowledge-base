@@ -11,7 +11,7 @@ _Ostatnia aktualizacja: 2026-09-19. Progi liczbowe pochodzące z przepisów opat
 | [`jakosc-zysku.md`](jakosc-zysku.md) | Jakość zysku, red flagi księgowe, rozwodnienie i wynagrodzenie w akcjach (SBC) |
 | [`wycena-wewnetrzna.md`](wycena-wewnetrzna.md) | DCF (z przykładem liczbowym), model Gordona i model H, EVA, wycena porównawcza i transakcje porównywalne, SOTP, wartość likwidacyjna, wzór Grahama, margines bezpieczeństwa |
 | [`specyfika-sektorowa.md`](specyfika-sektorowa.md) | Banki, ubezpieczyciele, deweloperzy, cykliczne/surowcowe, tech, telekomunikacja, utilities regulowane, retail, farmacja/biotech, REIT-y — gdzie standardowe wskaźniki zawodzą |
-| [`podatki-i-konta.md`](podatki-i-konta.md) | Belka, konta emerytalne, OKI, W-8BEN, fundusze/ETF-y i amerykański estate tax, spadki i darowizny, rezydencja podatkowa (stan na 2026) |
+| [`podatki-i-konta.md`](podatki-i-konta.md) | Belka, konta emerytalne, OKI, W-8BEN, fundusze/ETF-y (stan na 2026) |
 
 ---
 

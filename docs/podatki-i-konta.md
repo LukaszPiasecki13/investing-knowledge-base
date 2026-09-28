@@ -1,6 +1,6 @@
 # Podatki i rachunki inwestycyjne — stan na wrzesień 2026
 
-_Samodzielna baza wiedzy o opodatkowaniu inwestycji polskiego inwestora indywidualnego — uszczegóławia [`investing.md`](investing.md), ale nie wymaga jego znajomości do zrozumienia. Ostatnia aktualizacja: 2026-09-27._
+_Samodzielna baza wiedzy o opodatkowaniu inwestycji polskiego inwestora indywidualnego — uszczegóławia [`investing.md`](investing.md), ale nie wymaga jego znajomości do zrozumienia. Zakres celowo ograniczony do tego, co ma znaczenie dla bieżących decyzji inwestycyjnych — bez spadków, darowizn i innych sytuacji jednorazowych. Ostatnia aktualizacja: 2026-09-28._
 
 > ⚠️ **Przepisy podatkowe zmieniają się co roku, a ten dokument nie jest poradą podatkową.** Każdą liczbę stąd zweryfikuj w źródle pierwotnym przed rozliczeniem — linki w sekcji [Źródła](#źródła). Szczególnie istotne: **od 1 stycznia 2027 wchodzi w życie ustawa o Osobistych Kontach Inwestycyjnych (OKI)**, która zmienia zasady opodatkowania oszczędności (sekcja 3).
 
@@ -87,13 +87,6 @@ Każdy może mieć **tylko jedno** IKE i **tylko jedno** IKZE naraz, ale wolno p
 - Procedura: otwierasz nowe IKE/IKZE w instytucji docelowej, składając oświadczenie, że masz już takie konto gdzie indziej i zlecasz mu wypłatę transferową; następnie w instytucji dotychczasowej składasz dyspozycję transferu. Realizacja trwa zwykle od kilku dni do 14 dni.
 - **Transfer nie jest zwrotem** — nie uruchamia podatku Belki, nie przerywa biegu warunków (lata wpłat, wiek), nie jest zdarzeniem podatkowym.
 
-### 2.3. Dziedziczenie IKE i IKZE
-
-- Środki na IKE/IKZE **nie podlegają podatkowi od spadków i darowizn** (sekcja 6) niezależnie od tego, komu przypadają.
-- Wypłacane są w pierwszej kolejności **osobom uposażonym** wskazanym przez właściciela konta w dyspozycji (którą można zmieniać w każdej chwili); jeśli nikogo nie wskazano, środki wchodzą do masy spadkowej i dziedziczą je spadkobiercy według zasad ogólnych.
-- **IKE:** wypłata dla uposażonego/spadkobiercy jest **zwolniona z podatku dochodowego** (w tym z podatku Belki od zysku).
-- **IKZE:** wypłata dla uposażonego/spadkobiercy podlega **10% zryczałtowanemu podatkowi**, tak jak wypłata dla samego właściciela po spełnieniu warunków wieku — z jednym wyjątkiem: jeśli uposażony ma **własne IKZE**, może przyjąć środki transferem na swoje konto bez podatku w tym momencie; podatek 10% zostanie pobrany dopiero przy jego własnej, przyszłej wypłacie.
-
 </details>
 
 ---
@@ -167,7 +160,7 @@ Przy standardowych 15% WHT dopłata w Polsce wynosi więc **4 punkty procentowe*
 <details open>
 <summary>
 
-## 5. Fundusze i ETF-y — kraj rejestracji, akumulacja, podatek od spadków w USA
+## 5. Fundusze i ETF-y — kraj rejestracji, akumulacja
 
 </summary>
 
@@ -175,68 +168,15 @@ Przy standardowych 15% WHT dopłata w Polsce wynosi więc **4 punkty procentowe*
 
 **ETF dystrybuujący** wypłaca dywidendę — każda wypłata to zdarzenie podatkowe (Belka co roku, na zasadach z sekcji 1 i 4). **ETF akumulujący** reinwestuje dywidendy wewnątrz funduszu bez wypłaty — podatek płacisz dopiero **przy sprzedaży jednostek**, od całego narosłego zysku. Dla horyzontu wieloletniego to realna przewaga: odroczenie podatku pozwala reinwestowanym środkom pracować dłużej (procent składany na kwocie, która inaczej trafiłaby do urzędu skarbowego co roku).
 
-### 5.2. Kraj rejestracji funduszu — trzy różne reżimy
+### 5.2. Kraj rejestracji funduszu wpływa na podatek u źródła
 
-| Kraj rejestracji | WHT od dywidend z USA wewnątrz funduszu | Dostępność dla polskiego inwestora | Estate tax w USA (sekcja 5.3) |
-| --- | --- | --- | --- |
-| **USA** (fundusz US-domiciled) | Brak — fundusz jest podmiotem amerykańskim | ETF-y notowane w USA są dostępne u wielu brokerów, ale UCITS/PRIIPs w UE utrudniają ich oferowanie inwestorom detalicznym w UE (brak KID) | **Tak — ryzyko realne**, zob. 5.3 |
-| **Irlandia** (UCITS) | **15%** dzięki umowie o unikaniu podwójnego opodatkowania USA-Irlandia (niższe niż standardowe 30%) | Standard dla europejskich inwestorów — większość popularnych ETF-ów UCITS na akcje USA/świat jest zarejestrowana w Irlandii | **Nie** — fundusz irlandzki nie jest aktywem US-situs, nawet trzymając akcje amerykańskie |
-| **Luksemburg** | Zwykle wyższe niż Irlandia (zależnie od konkretnego traktatu i struktury funduszu) | Rzadziej wybierany niż Irlandia do ekspozycji na USA z tego powodu | **Nie**, z tego samego powodu jak Irlandia |
-
-**Wniosek praktyczny:** dla polskiego inwestora budującego długoterminową ekspozycję na akcje amerykańskie fundusz **UCITS zarejestrowany w Irlandii** jest zwykle korzystniejszy niż fundusz notowany w USA — niższy WHT u źródła na dywidendy wewnątrz funduszu **i** brak ryzyka amerykańskiego podatku od spadków (sekcja 5.3). Kosztem bywa nieco wyższy wskaźnik kosztów całkowitych (TER) funduszu UCITS względem analogicznego ETF-u notowanego w USA.
-
-### 5.3. Ryzyko, o którym rzadko się mówi: amerykański podatek od spadków (estate tax)
-
-To odrębny podatek od podatku Belki i od podatku u źródła na dywidendy (W-8BEN, sekcja 4) — dotyczy **wartości aktywów w chwili śmierci**, nie dochodu.
-
-- Osoba niebędąca obywatelem/rezydentem USA (**nonresident alien**, NRA) ma prawo tylko do **60 000 USD** zwolnienia od amerykańskiego podatku od spadków na aktywa uznane za **US-situs** — to jest kwota rzędu setek razy mniejsza niż zwolnienie dla obywateli USA.
-- Stawki podatku od nadwyżki: **18-40%**, rosnąco z wartością.
-- **Polska nie ma z USA traktatu o podatku od spadków** (estate tax treaty) — traktat, który mógłby ustalić korzystniejsze zasady, istnieje tylko z ok. 15 krajami (m.in. Niemcy, Francja, Wielka Brytania, Japonia); Polska nie jest na tej liście.
-- **Co jest US-situs:** akcje spółek amerykańskich (niezależnie od tego, na jakiej giełdzie i przez jakiego brokera je trzymasz) oraz jednostki **ETF-ów zarejestrowanych w USA**. **Co nie jest US-situs:** jednostki funduszy zarejestrowanych poza USA (np. UCITS w Irlandii czy Luksemburgu), nawet jeśli fundusz w 100% replikuje indeks amerykańskich akcji — bo aktywem, które posiadasz, jest jednostka funduszu zarejestrowanego w Irlandii, nie same akcje amerykańskie.
-
-**Konsekwencja praktyczna:** portfel bezpośrednio złożony z akcji spółek notowanych w USA (albo ETF-ów notowanych w USA) o wartości powyżej 60 000 USD wystawia spadkobierców na realne ryzyko amerykańskiego podatku od spadków w chwili Twojej śmierci — niezależnie od tego, czy kiedykolwiek mieszkałeś lub płaciłeś podatki w USA. Zamiana takiej ekspozycji na fundusz UCITS zarejestrowany w Irlandii/Luksemburgu, dający tę samą ekspozycję rynkową, eliminuje to ryzyko.
-
-> To nie jest porada podatkowa czy prawna, tylko sygnał, że temat istnieje i warto go zweryfikować u doradcy przy większym portfelu akcji/ETF-ów notowanych w USA. Przepisy i traktaty się zmieniają — zweryfikuj status na dzień podejmowania decyzji.
-
-</details>
-
----
-
-<details open>
-<summary>
-
-## 6. Podatek od spadków i darowizn (aktywa krajowe)
-
-</summary>
-
-Osobny podatek od podatku od zysków kapitałowych — dotyczy **nabycia** majątku (spadek, darowizna), nie zysku z jego sprzedaży. W przeciwieństwie do USA (sekcja 5.3), w Polsce podatek zależy od **stopnia pokrewieństwa**, nie od rodzaju aktywa.
-
-### 6.1. Grupy podatkowe i kwoty wolne (2026)
-
-| Grupa | Kto | Kwota wolna (2026) |
+| Kraj rejestracji | WHT od dywidend z USA wewnątrz funduszu | Dostępność dla polskiego inwestora |
 | --- | --- | --- |
-| I | małżonek, dzieci, wnuki, rodzice, dziadkowie, pasierb, rodzeństwo, ojczym, macocha, teściowie, zięć, synowa | **36 120 zł** |
-| II | dalsi krewni: zstępni rodzeństwa, rodzeństwo rodziców, małżonkowie rodzeństwa i inni | **27 090 zł** |
-| III | pozostali nabywcy (osoby niespokrewnione) | **5 733 zł** |
+| **USA** (fundusz US-domiciled) | Brak — fundusz jest podmiotem amerykańskim | ETF-y notowane w USA są dostępne u wielu brokerów, ale UCITS/PRIIPs w UE utrudniają ich oferowanie inwestorom detalicznym w UE (brak KID) |
+| **Irlandia** (UCITS) | **15%** dzięki umowie o unikaniu podwójnego opodatkowania USA-Irlandia (niższe niż standardowe 30%) | Standard dla europejskich inwestorów — większość popularnych ETF-ów UCITS na akcje USA/świat jest zarejestrowana w Irlandii |
+| **Luksemburg** | Zwykle wyższe niż Irlandia (zależnie od konkretnego traktatu i struktury funduszu) | Rzadziej wybierany niż Irlandia do ekspozycji na USA z tego powodu |
 
-Stawki podatku nad kwotą wolną: **od 3% do 20%**, zależnie od grupy i wartości nabycia.
-
-**Sumowanie 5-letnie:** wartości nabyte od **tej samej osoby** w ciągu ostatnich 5 lat sumują się przy sprawdzaniu, czy przekroczono kwotę wolną — darowizna z 2023 r. „pamiętana" jest przy liczeniu limitu aż do 2028 r.
-
-### 6.2. Zwolnienie dla najbliższej rodziny (tzw. grupa 0)
-
-Węższy podzbiór grupy I — **małżonek, zstępni (dzieci, wnuki), wstępni (rodzice, dziadkowie), pasierb, rodzeństwo, ojczym, macocha** (art. 4a ustawy) — **nie obejmuje** zięcia, synowej ani teściów, choć ci są w grupie I. Dla tego węższego kręgu istnieje **pełne zwolnienie z podatku, bez limitu kwoty**, pod dwoma warunkami:
-
-- **zgłoszenie** nabycia do urzędu skarbowego na formularzu **SD-Z2** w terminie **6 miesięcy** od powstania obowiązku podatkowego — termin jest **nieprzekraczalny**, po jego minięciu zwolnienie przepada i płaci się podatek jak w grupie I bez zwolnienia;
-- przy darowiznie **pieniężnej** dodatkowo udokumentowanie przekazania środków na rachunek bankowy (przelew, nie gotówka).
-
-**Obowiązku zgłoszenia nie ma**, gdy: wartość nabycia od tej samej osoby nie przekracza kwoty wolnej z grupy I (36 120 zł), albo nabycie następuje na podstawie aktu notarialnego (notariusz zgłasza sam). Przekazanie akcji/jednostek funduszy w drodze darowizny w rodzinie najbliższej podlega tym samym zasadom zgłoszenia jak darowizna pieniężna (poza wymogiem dokumentowania przelewu, który dotyczy tylko środków pieniężnych).
-
-### 6.3. Co to znaczy dla portfela inwestycyjnego
-
-- Przekazanie portfela akcji/ETF-ów w darowiźnie dziecku czy małżonkowi jest, po zgłoszeniu w terminie, **całkowicie zwolnione z podatku** — ale sama zmiana własności rachunku maklerskiego to osobna procedura u brokera (nie automatyczna z dniem darowizny).
-- Wartość darowizny do zgłoszenia to **wartość rynkowa** papierów w dniu darowizny, nie cena zakupu — brak realizacji zysku, więc brak podatku Belki w tym momencie (dopiero obdarowany, sprzedając, rozliczy zysk liczony od wartości z dnia darowizny jako kosztu, a nie od Twojej historycznej ceny zakupu).
-- IKE i IKZE **nie wchodzą** do tego reżimu — mają własne, korzystniejsze zasady dziedziczenia (sekcja 2.3).
+**Wniosek praktyczny:** WHT pobrany wewnątrz funduszu **obniża realny zwrot** i nie da się go odzyskać (to nie to samo co WHT od dywidendy wypłacanej bezpośrednio Tobie, rozliczany przez W-8BEN w sekcji 4) — dla ekspozycji na akcje amerykańskie fundusz UCITS zarejestrowany w Irlandii ma z tego powodu zwykle niższy koszt podatkowy niż odpowiednik z Luksemburga. Kosztem bywa nieco wyższy wskaźnik kosztów całkowitych (TER) funduszu UCITS względem analogicznego ETF-u notowanego w USA — porównuj oba efekty łącznie, nie tylko sam TER.
 
 </details>
 
@@ -245,38 +185,7 @@ Węższy podzbiór grupy I — **małżonek, zstępni (dzieci, wnuki), wstępni 
 <details open>
 <summary>
 
-## 7. Rezydencja podatkowa — kiedy to istotne
-
-</summary>
-
-Cały ten dokument zakłada polską rezydencję podatkową (opodatkowanie całości dochodów w Polsce, tzw. nieograniczony obowiązek podatkowy). To założenie przestaje być oczywiste, gdy planujesz przeprowadzkę za granicę albo mieszkasz część roku poza Polską.
-
-### 7.1. Kryteria (art. 3 ustawy o PIT)
-
-Osoba ma miejsce zamieszkania w Polsce (czyli jest polskim rezydentem podatkowym), jeśli spełnia **którykolwiek** z dwóch warunków:
-
-1. ma w Polsce **centrum interesów osobistych lub gospodarczych** (ośrodek interesów życiowych) — kryterium **jakościowe i pierwszorzędne**: rodzina, praca, majątek, aktywność społeczna;
-2. przebywa w Polsce **dłużej niż 183 dni** w roku podatkowym — kryterium **pomocnicze**, stosowane głównie wtedy, gdy ośrodka interesów życiowych nie można jednoznacznie ustalić.
-
-To rozłączne „lub" bywa źle rozumiane: samo przebywanie w Polsce poniżej 183 dni **nie wystarcza**, by przestać być polskim rezydentem, jeśli centrum interesów życiowych (rodzina, majątek) zostało w Polsce.
-
-### 7.2. Dlaczego to ma znaczenie dla inwestora
-
-- **Rezydent polski** rozlicza w Polsce **całość** dochodów kapitałowych, niezależnie od kraju brokera czy giełdy.
-- **Zmiana rezydencji w trakcie roku** (tzw. rezydencja łamana) jest możliwa i uznawana przez sądy — ale wymaga rzeczywistego przeniesienia ośrodka interesów życiowych, nie tylko fizycznej nieobecności.
-- Wyjście z polskiej rezydencji podatkowej przy dużym, niezrealizowanym zysku z portfela może uruchomić **exit tax** (podatek od dochodów z niezrealizowanych zysków) w określonych sytuacjach dla dużych portfeli — temat wykraczający poza zakres tego dokumentu, wymaga indywidualnej porady przy planowanej emigracji.
-- Sama umowa o unikaniu podwójnego opodatkowania z krajem docelowym decyduje, który kraj ma pierwszeństwo opodatkowania w okresie przejściowym.
-
-> Zmiana rezydencji podatkowej to decyzja o dużej wadze prawnej i podatkowej — ten dokument tylko sygnalizuje temat. Przy realnym planowaniu przeprowadzki skonsultuj się z doradcą podatkowym.
-
-</details>
-
----
-
-<details open>
-<summary>
-
-## 8. Checklist roczny
+## 6. Checklist roczny
 
 </summary>
 
@@ -287,8 +196,6 @@ To rozłączne „lub" bywa źle rozumiane: samo przebywanie w Polsce poniżej 1
 - [ ] Czy dywidendy zagraniczne zostały przeliczone po właściwych kursach NBP?
 - [ ] Czy PIT-38 złożony do 30 kwietnia?
 - [ ] (od 2027) Czy struktura portfela względem limitów OKI jest przemyślana?
-- [ ] Czy wartość portfela akcji/ETF-ów notowanych w USA nie zbliża się do progu, przy którym warto rozważyć zamianę na fundusze UCITS (sekcja 5.3)?
-- [ ] Czy planowana jest darowizna lub zmiana rezydencji podatkowej, która wymaga wcześniejszego przygotowania (sekcje 6-7)?
 
 </details>
 
@@ -309,9 +216,4 @@ To rozłączne „lub" bywa źle rozumiane: samo przebywanie w Polsce poniżej 1
 | Przeliczanie walut po kursie średnim NBP z dnia poprzedzającego | Ustawa o PIT, art. 11a | 2026-09 |
 | Ważność W-8BEN do końca trzeciego roku kalendarzowego po podpisaniu | [IRS — Instructions for Form W-8BEN](https://www.irs.gov/instructions/iw8ben) | 2026-09 |
 | Transfer IKE/IKZE tylko IKE→IKE i IKZE→IKZE, w całości, bez podatku Belki | [NN.pl — transfer IKE/IKZE](https://www.nn.pl/dla-ciebie/emerytura-i-finanse/ike-ikze/transfer); [bossa.pl — wypłata, zwrot, transfer](https://bossa.pl/edukacja/ike-i-ikze/wyplata-zwrot-transfer) | 2026-09 |
-| Dziedziczenie IKE zwolnione z PIT; IKZE opodatkowane 10% (albo transfer na własne IKZE bez podatku od razu) | [NN.pl — dziedziczenie w IKE i IKZE](https://www.nn.pl/blog/posts/2020/dziedziczenie-w-ike-i-ikze-kto-dziedziczy-srodki-z-ike-ikze); [SII — dziedziczenie z ZUS, OFE, IKE, IKZE, PPE i PPK](https://www.sii.org.pl/16311/edukacja/abc-inwestora/dziedziczenie-z-zus-ofe-ike-ikze-ppe-i-ppk.html) | 2026-09 |
-| Fundusze UCITS z Irlandii: 15% WHT na dywidendy z USA wewnątrz funduszu, brak statusu US-situs | [Bogleheads — Nonresident alien investors and Ireland domiciled ETFs](https://www.bogleheads.org/wiki/Nonresident_alien_investors_and_Ireland_domiciled_ETFs); [State Street — US ETFs vs Irish UCITS ETFs](https://www.ssga.com/us/en/institutional/insights/considerations-for-non-us-investors-us-etfs-vs-irish-ucits) | 2026-09 |
-| Amerykański podatek od spadków (estate tax) dla nonresident alien: zwolnienie 60 000 USD, stawki 18-40%, Polska bez traktatu estate tax z USA | [IRS — Estate tax for nonresidents](https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax-for-nonresidents-not-citizens-of-the-united-states); [Creative Planning — US estate tax trap for NRA](https://creativeplanning.com/international/insights/estate-planning/nonresident-alien-us-estate-tax-trap/) | 2026-09 |
-| Grupy podatkowe i kwoty wolne od podatku od spadków i darowizn 2026 (36 120 / 27 090 / 5 733 zł), sumowanie 5-letnie, stawki 3-20% | [Prawo.pl — limity spadków i darowizn 2026](https://www.prawo.pl/podatki/limity-spadkow-i-darowizn-wolnych-od-podatku-2026,521989.html); Ustawa o podatku od spadków i darowizn | 2026-09 |
-| Zwolnienie bez limitu dla najbliższej rodziny po zgłoszeniu w ciągu 6 miesięcy | Ustawa o podatku od spadków i darowizn, art. 4a | 2026-09 |
-| Kryteria rezydencji podatkowej: centrum interesów życiowych jako kryterium pierwszorzędne, 183 dni jako pomocnicze | Ustawa o PIT, art. 3 ust. 1a; [Infor.pl — jak działa polska rezydencja podatkowa](https://ksiegowosc.infor.pl/podatki/podatki-osobiste/pit/7447682,183-dni-w-polsce-i-dalej-nie-jestes-rezydentem-eksperci-ujawniaja-ja.html) | 2026-09 |
+| Fundusze UCITS z Irlandii: 15% WHT na dywidendy z USA wewnątrz funduszu (niżej niż standardowe 30%, dzięki umowie USA-Irlandia) | [Bogleheads — Nonresident alien investors and Ireland domiciled ETFs](https://www.bogleheads.org/wiki/Nonresident_alien_investors_and_Ireland_domiciled_ETFs); [State Street — US ETFs vs Irish UCITS ETFs](https://www.ssga.com/us/en/institutional/insights/considerations-for-non-us-investors-us-etfs-vs-irish-ucits) | 2026-09 |
